@@ -56,7 +56,7 @@ def chat():
     else:
         response=qa.invoke({"query":user_input})
     result=response["result"]
-    print(result)
+    print(result,type(result))
     return jsonify({'response':str(result)})
 
 if __name__=='__main__':
